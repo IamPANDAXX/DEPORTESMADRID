@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEPORTES MADRID</title>
+    <link rel="shortcut icon" href="imgs/logo-deportesmadrid-transparente.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--librerias AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!--featherIcons-->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+
+</head>
+<body>
+    <nav class="top-menu" data-aos="fade-down">
+
+        <div class="burguer-menu">☰</div>
+
+        <img class="logo-img-nav" src="imgs/logo-deportesmadrid-transparente.png" alt="">
+        
+        <ul class="menu-list">
+            
+            <li class="menu-links"><a class="menu-links" href="">Uniformes</a></li>
+            <li class="menu-links"><a class="menu-links" href="">Trabajos</a></li>
+            <li class="menu-links"><a class="menu-links" href="">Noticias</a></li>
+            <li class="menu-links"><a class="menu-links" href="">Contactanos</a></li>
+        </ul>
+    </nav>
+
+   <div class="contenedor">
+    <div class="carrusel" id="carrusel" data-aos="fade-up">
+      <section class="seccion">
+        <video class="video-section" autoplay muted loop playsinline src="videos/km_DM-LOGO-PRESENTATION_1080p_60f_20251107_225813.mp4"></video>
+      </section>
+      <section class="seccion">Nuestro trabajos, Serigrafia</section>
+      
+      <section class="seccion" id="noticias">
+      </section>
+
+      <section class="seccion">Colaboraciones</section>
+    </div>
+
+    <div class="botones" data-aos="fade-left">
+      <button id="up"><i data-feather="arrow-up"></i></button>
+      <button id="down"><i data-feather="arrow-down"></i></button>
+    </div>
+  </div>
+  
+</body>
+<script src="js/menu.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/noticias.js"></script>
+<script>
+  feather.replace();
+</script>
+<script>
+      AOS.init({ duration: 1200 });
+</script>
+</html>
