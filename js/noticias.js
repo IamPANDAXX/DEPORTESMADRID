@@ -3,6 +3,7 @@ async function cargarNoticias() {
   contenedor.innerHTML = "<p>Cargando...</p>";
 
   //api de la noticias
+  //variable de entorno para cuiddar api o base de datos
   const apiKey = process.env.NEWS_API_KEY;
   const urlNews = `https://newsdata.io/api/1/latest?apikey=${apiKey}&q=espn`;
 
