@@ -3,7 +3,8 @@ async function cargarNoticias() {
   contenedor.innerHTML = "<p>Cargando...</p>";
 
   //api de la noticias
-  const urlNews = "https://newsdata.io/api/1/latest?apikey=pub_ca334f5eb7194de7b0bfcd054d4dec7f&q/=espn";
+  const apiKey = process.env.NEWS_API_KEY;
+  const urlNews = `https://newsdata.io/api/1/latest?apikey=${apiKey}&q=espn`;
 
   const res = await fetch(urlNews);
   const data = await res.json();
